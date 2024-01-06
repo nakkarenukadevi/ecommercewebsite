@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
-}
+.navbar-container{
+    height: 60px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ .wrapper {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
   }
-}
+  .language{
+    display: flex;
+    font-size: 20px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .lag{
+    margin-right: 10px;
   }
+  input{
+    border:0;
+  }
+  .searchIcon{
+
+display: flex;
+justify-content: center;
+    align-items: center;
+    color:gray;
+border: 1px solid gray;
+
+  }
+  .searchInput{
+
+   border: none;
+  }
+  .cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.registe{
+  margin-right: 10px;
 }
+
+.signin {
+  margin-right: 5px;
+}
+  }
+    }
+    .announcement-container{
+height:30px;
+background-color: teal;
+color:white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: small;
+font-weight: 500;
+
+    }
+    .slider_container{
+      width: 100%;
+      height:100vh;
+      display: flex;
+      justify-content: space-between;
+    }
+      .left_icon{
+position: absolute;
+top:400px;
+left:50px;
+margin: auto;
+padding: 10px;
+border-radius: 100%;
+ 
+    color: aliceblue;
+cursor: pointer;
+
+
+
+      }
+      .right_icon{
+        position: absolute;
+        top:400px;
+        right:100px;
+        padding: 10px;
+          border-radius: 100%;
+       
+          align-items: center;
+          cursor: pointer;
+
+       
+      }
+      .wrapper{
+        width:100%
+      }
+    .product-container{
+  margin: auto;
+    width: 80%;
+    
+    .product{
+      display: inline-block;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      width: 300px;
+  box-shadow: inset;
+      justify-items: center;
+      align-items: center;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+   
+      button{
+width:300px;
+padding: 20px;
+background-color: black;
+color: aliceblue;
+font-family: 'Courier New', Courier, monospace;
+font-size: medium;
+font-weight: 500;
+border-radius: 5px;
+
+
+      }
+      img{
+        border-radius: 5px;
+      }
+    }
+    }
