@@ -1,7 +1,12 @@
 import React from "react";
 import search_Icon from "./magnifying-glass-solid.svg";
 import cart_icon from "./cart-shopping-solid.svg";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 const Navbar = () => {
+  let cartData = useSelector((state) => state.cart.cartItem);
+
   return (
     <div className="navbar-container">
       <div className="wrapper">
@@ -19,7 +24,10 @@ const Navbar = () => {
           <span className="registe">REGISTER</span>
           <span className="signin">SiGN IN</span>
           <span>
-            <img src={cart_icon} style={{ width: "25px" }} />
+            <Link to="cart">
+              <img src={cart_icon} style={{ width: "25px" }} />(
+              {cartData.length})
+            </Link>
           </span>
         </div>
       </div>

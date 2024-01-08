@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 
 import Navbar from "./Navbar";
-import SingleProduct from "./SingleProduct";
-
+import ProductData from "./ProductData";
+import Cart from "./Cart";
 import Slider from "./Slider";
 const router = createBrowserRouter([
   {
@@ -20,8 +20,12 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "singleproduct/:id",
-        element: <SingleProduct />,
+        path: "productdata/:id",
+        element: <ProductData />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
       },
     ],
   },

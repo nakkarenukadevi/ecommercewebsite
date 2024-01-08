@@ -1,10 +1,14 @@
 .navbar-container{
     height: 60px;
-
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  .wrapper {
     padding: 10px 20px;
     display: flex;
     justify-content: space-around;
+  }
+  a{
+    text-decoration: none;
   }
   .language{
     display: flex;
@@ -22,14 +26,19 @@
 display: flex;
 justify-content: center;
     align-items: center;
-    color:gray;
-border: 1px solid gray;
+
+border: 1px solid black;
 
   }
   .searchInput{
+border: none;
+width: 100%;
+ padding: 10px;
 
-   border: none;
   }
+     .searchInput:focus {
+       border: none
+     }
   .cart{
     display: flex;
     justify-content: center;
@@ -44,6 +53,7 @@ border: 1px solid gray;
   }
     }
     .announcement-container{
+  
 height:30px;
 background-color: teal;
 color:white;
@@ -92,7 +102,7 @@ cursor: pointer;
     .product-container{
   margin: auto;
     width: 80%;
-    
+
     .product{
       display: inline-block;
       margin-right: 30px;
@@ -100,7 +110,8 @@ cursor: pointer;
       width: 300px;
   box-shadow: inset;
       justify-items: center;
-      align-items: center;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      align-items: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: center;
    
       button{
@@ -119,4 +130,94 @@ border-radius: 5px;
         border-radius: 5px;
       }
     }
+    h1{
+      text-align: center;
+      margin-bottom: 20px;
     }
+
+
+    }
+ .productdataContainer{
+ margin-top: 50px;
+  .product{
+    display: flex;
+    justify-content: space-around;
+ 
+
+  }
+  .name{
+    margin: 10px;
+
+       font-size: x-large;
+  }
+.productname{
+  margin-bottom: 20px;
+font-size: 30px;
+font-style:normal;
+}
+.cost{
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: 400;
+
+}
+ul li{
+  font-size: 20px;
+  line-height: 2;
+}
+.buttons{
+  margin:30px
+}
+.addcartbutton{
+width:130px;
+height:50px;
+background-color: orange;
+font-size: 20px;
+color:aliceblue;
+font-weight: 600;
+border: none;
+margin-right: 20px;
+}
+.buybutton{
+  width: 130px;
+    height: 50px;
+    background-color:red;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 600;
+    border: none;
+    margin-right: 20px;
+}
+.size{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+ 
+}
+.s ,.m,.l,.xl,.xxl{
+  border:1px solid gainsboro;
+  padding:10px 15px;
+}
+ }
+ .cart{
+  display: flex;
+  justify-content: center;
+
+  .product{
+display: block;
+
+
+margin:20px ;
+  }
+  .removebutton{
+    width: 130px;
+      height: 50px;
+      background-color: red;
+      font-size: 20px;
+      color: aliceblue;
+      font-weight: 600;
+      border: none;
+      margin-right: 20px;
+  }
+
+ }

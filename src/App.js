@@ -3,14 +3,18 @@ import "./App.css";
 
 import Announcement from "./components/Announcement/Announcement";
 import Navbar from "./components/Navbar";
-import Slider from "./components/Slider";
+
+import { Provider } from "react-redux";
+import Store from "./components/Store/Store";
 function App() {
   return (
-    <div className="App">
-      <Announcement />
-      <Navbar />
-      <Outlet />
-    </div>
+    <Provider store={Store}>
+      <div className="App">
+        <Announcement />
+        <Navbar />
+        <Outlet />
+      </div>
+    </Provider>
   );
 }
 
